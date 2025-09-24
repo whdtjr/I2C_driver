@@ -721,13 +721,6 @@ cleanup_msgs:
     }
 }
 
-/* release 함수 -----------------------------------------------------------------------------------*/
-// 사용 X
-static int stm32_i2c_release(struct inode *inode, struct file *file)
-{
-    return 0;
-}
-
 /* file_operations 구조체 ------------------------------------------------------------------------*/
 static const struct file_operations stm32_i2c_fops = {
     .owner           = THIS_MODULE,
